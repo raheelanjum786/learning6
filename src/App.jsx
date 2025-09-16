@@ -1,6 +1,7 @@
 import "./App.css";
 import HeroSection from "./components/HeroSection";
 import { WavesDemo } from "./components/background";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
       <div className="fixed inset-0 z-0">
         <WavesDemo />
       </div>
+      
+      {/* Navigation layer */}
+      <Navbar />
       
       {/* Content layer */}
       <div className="relative z-10">
