@@ -35,6 +35,7 @@ const HeroSection = () => {
           height={10}
           width={350}
           alt="Hero"
+          loading="lazy"
           className="animate-bounce"
         />
       </div>
