@@ -127,12 +127,12 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div
+          {/* <div
             ref={logoRef}
             className="text-white font-light text-base sm:text-lg tracking-wider"
           >
             Portfolio
-          </div>
+          </div> */}
 
           {/* Hamburger Menu */}
           <button

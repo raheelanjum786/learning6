@@ -1,22 +1,27 @@
 import "./App.css";
 import HeroSection from "./components/HeroSection";
-import { WavesDemo } from "./components/background";
+import AboutSection from "./components/AboutSection";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="relative min-h-screen">
-      {/* Wave background layer */}
-      <div className="fixed inset-0 z-0">
-        <WavesDemo />
-      </div>
-      
+      {/* Wave background layer - only for hero section */}
+
       {/* Navigation layer */}
       <Navbar />
-      
+
       {/* Content layer */}
       <div className="relative z-10">
-        <HeroSection />
+        {/* Hero Section with wave background */}
+        <div className="min-h-screen">
+          <HeroSection />
+        </div>
+
+        {/* About Section with enhanced background */}
+        <div className="min-h-screen">
+          <AboutSection />
+        </div>
       </div>
     </div>
   );
